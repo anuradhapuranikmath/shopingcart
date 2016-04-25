@@ -1,0 +1,5 @@
+com\musichub\service\Serviceclass.class
+com\musichub\Dao\ProductDetailsDao.class
+com\musichub\controller\IndexController.class
+com\musichub\model\Register.class
+com\musichub\model\ProductDetails.class
