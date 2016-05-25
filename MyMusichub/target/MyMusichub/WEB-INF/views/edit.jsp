@@ -15,40 +15,46 @@
 </head>
 <body>
 <%-- <c:url var="userRegistration" value="saveUser.html" /> --%>
-<form:form id="registerForm" modelAttribute="me" method="post"  
-   action="success">  
-   <div class="container">
-	<table class="table">  
-	<tbody>
-    <tr>  
-     <td><form:label path="id">Product ID</form:label></td>  
-     <td><form:input path="id" value="${productObject.productId}" /></td>  
-    </tr>  
-    <tr>  
-     <td><form:label path="name">Product Name</form:label></td>  
-     <td><form:input path="name" value="${productObject.productName}"/></td>  
-    </tr>  
-    <tr>  
-     <td><form:label path="price">Price</form:label></td>  
-     <td><form:input path="price" value="${productObject.productprice}"/></td>  
-    </tr>  
-    <tr>  
-     <td><form:label path="condition">Condition</form:label></td>  
-     <td><form:input path="condition" value="${productObject.condition}"/></td>  
-    </tr>
-    <tr>
-    <tr>  
-     <td><form:label path="description">Description</form:label></td>  
-     <td><form:input path="description" value="${productObject.manufacturer}"/></td>  
-    </tr>  
-    <tr> 
-    </tr>  
-    <tr>  
-     <td></td>  
-     <td><input type="submit" value="Update" />  
-     </td>  
-    </tr>  
-    </tbody>
-   </table>  
+
+      
+	<div class="container">
+  <form:form commandName="up" class="form-horizontal" id="registration" method="post" action="edit"> 
+  
+  <fieldset>
+			<legend>UPDATING PRODUCT </legend>
+			<div class="control-group">
+				<label class="control-label">Product ID:</label>
+				<div class="controls">
+					<form:input path="productId" />
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">Product Name:</label>
+				<div class="controls">
+					<form:input path="productName" />
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">product price</label>
+				<div class="controls">
+					<form:input path="productprice" />
+				</div>
+				
+				<div class="control-group">
+				<label class="control-label">manufacturer</label>
+				<div class="controls">
+					<form:input path="manufacturer" />
+				</div>
+				
+				
+			</div>
+			<div class="control-group">
+				<label class="control-label"></label>
+				<div class="controls">
+					<button type="submit" class="btn btn-success" >UPDATE</button>
+				</div>
+			</div>
+		</fieldset>
+</form:form> 
    </div>
-  </form:form>  
+   

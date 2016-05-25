@@ -19,15 +19,15 @@
 <div class="carousel-inner" role="listbox">                                     
 
     <div class="item active">
-      <img src="${image}/image1.jpg"/>
+      <img src="${image}/new.jpg"/>
     </div>
 
     <div class="item">
-      <img src="${image}/images2.jpg"/>
+      <img src="${image}/new1.jpg"/>
     </div>
 
     <div class="item">
-       <img src="${image}/image3.jpg"/>
+       <img src="${image}/new.jpg"/>
     </div>
 
     
@@ -48,20 +48,20 @@
 <div class="row">
   <div class="col-md-4">
     <a href="angularpagedetails1?value=val1" class="thumbnail">
-      <p>Piano is one of the music instrument.</p> 
-       <img src="${image}/im1.jpg" alt="Pulpit Rock" style="width:150px;height:150px"/>
+      
+       <img src="${image}/image1.jpg"  style="width:150px;height:150px"/>
     </a>
   </div>
   <div class="col-md-4">
     <a href="angularpagedetails1?value=val2" class="thumbnail">
-      <p>Tabala is one of the music instrument ".</p>
-      <img src="${image}/im2.jpg" alt="Moustiers Sainte Marie" style="width:150px;height:150px"/>
+      
+      <img src="${image}/im2.jpg"  style="width:150px;height:150px"/>
     </a>
   </div>
   <div class="col-md-4">
     <a href="angularpagedetails1?value=val3" class="thumbnail">
-      <p>Guitar is one of the music instrument.</p> 
-      <img src="${image}/im3.jpg" alt="Cinque Terre" style="width:150px;height:150px"/>
+     
+      <img src="${image}/images2.jpg"  style="width:150px;height:150px"/>
     </a>
   </div>
   

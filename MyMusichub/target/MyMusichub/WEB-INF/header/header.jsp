@@ -37,8 +37,8 @@
 
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
+      width: 100%;
+      margin: px;
   }
 </style>
   

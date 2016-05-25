@@ -10,34 +10,34 @@
 
 </head>
 <body>
-<form:form commandName="user" class="form-horizontal" id="registration" method="post" action="signsuccess">
 <div class="container">
+<form:form commandName="user" class="form-horizontal" id="registration" method="post" action="signsuccess">
+
 	
 		<fieldset>
 			<legend>Registration Form</legend>
 			<div class="control-group">
 				<label class="control-label">Firstname:</label>
 				<div class="controls">
-					<input type="text" id="firstname" name="first_name">
+					<form:input path="firstName" />
 				</div>
 			</div>
 			<div class="control-group">
 				<label class="control-label">Lastname:</label>
 				<div class="controls">
-					<input type="text" id="lastname" name="last_name">
+					<form:input path="lastName" />
 				</div>
 			</div>
-			
 			<div class="control-group">
 				<label class="control-label">Email</label>
 				<div class="controls">
-					<input type="text" id="email" name="email">
+					<form:input path="email" />
 				</div>
 				
 				<div class="control-group">
 				<label class="control-label">Password</label>
 				<div class="controls">
-					<input type="password" id="password" name="pass_word">
+					<form:input path="password" />
 				</div>
 				
 				
@@ -49,9 +49,9 @@
 				</div>
 			</div>
 		</fieldset>
-	
+	</form:form>
 </div>
-</form:form>
+
 <jsp:include page="/WEB-INF/footer/footer.jsp"></jsp:include>
 </body>
 </html>

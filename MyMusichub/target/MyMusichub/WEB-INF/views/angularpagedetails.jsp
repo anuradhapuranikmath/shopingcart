@@ -63,12 +63,11 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></scrip
 <thead>  
           <tr>  
             <th>PRODUCT ID</th>  
-            <th>NAME</th>  
-            <th>PRODUCT COST</th>  
-            <th>DESCRIPTION</th> 
-            <th>PRODUCT DESC</th>
-            <th>DELETE PRODUCT</th>
-            <th>UPDATE PRODUCT</th> 
+            <th>PRODUCT NAME</th>  
+            <th>PRODUCT PRICE</th> 
+            <th>MANUFACTURER</th>
+             <th>DESC</th>
+            
           </tr>  
         </thead>  
         <tbody>  
@@ -78,8 +77,8 @@ src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></scrip
           <td>{{c.productprice}}</td>
           <td>{{c.manufacturer}}</td>
           <td><a href="addtocart?id={{c.productId}}">moredetails</a></td>
-          <td><a href="angularpagedetails?id={{c.productId}}">delete</a></td>
-          <td><a href="edit?id={{c.productId}}">update</a></td>
+          <!-- <td><a href="angularpagedetails?id={{c.productId}}">delete</a></td>
+          <td><a href="edit?id={{c.productId}}">update</a></td> -->
           </tr>
 </tbody>
 </table>
@@ -99,13 +98,11 @@ if(values.equals("val2"))
 <table class="display table">
 <thead>  
           <tr>  
-            <th>NAME</th>  
             <th>PRODUCT ID</th>  
-            <th>PRODUCT COST</th>  
-            <th>DESCRIPTION</th> 
-            <th>PRODUCT DESC</th>
-            <th>DELETE PRODUCT</th>
-            <th>UPDATE PRODUCT</th> 
+            <th>PRODUCT NAME</th>  
+            <th>PRODUCT PRICE</th> 
+            <th>MANUFACTURER</th>
+            <th>DESC</th>
           </tr>  
         </thead>  
         <tbody>  
@@ -115,8 +112,8 @@ if(values.equals("val2"))
           <td>{{c.productprice}}</td>
           <td>{{c.manufacturer}}</td>
           <td><a href="addtocart?id={{c.productId}}">moredetails</a></td>
-          <td><a href="angularpagedetails?id={{c.productId}}">delete</a></td>
-          <td><a href="edit?id={{c.productId}}">update</a></td>
+          <!-- <td><a href="angularpagedetails?id={{c.productId}}">delete</a></td>
+          <td><a href="edit?id={{c.productId}}">update</a></td> -->
           </tr>
 </tbody>
 </table>
@@ -134,13 +131,11 @@ if(values.equals("val3"))
 <table class="display table">
 <thead>  
           <tr>  
-            <th>NAME</th>  
             <th>PRODUCT ID</th>  
-            <th>PRODUCT COST</th>  
-            <th>DESCRIPTION</th>  
-            <th>PRODUCT DESC</th>
-            <th>DELETE PRODUCT</th>
-            <th>UPDATE PRODUCT</th>
+            <th>PRODUCT NAME</th>  
+            <th>PRODUCT PRICE</th> 
+            <th>MANUFACTURER</th>
+             <th>DESC</th>
           </tr>  
         </thead>  
         <tbody>  
@@ -150,8 +145,8 @@ if(values.equals("val3"))
           <td>{{c.productprice}}</td>
           <td>{{c.manufacturer}}</td>
           <td><a href="addtocart?id={{c.productId}}">moredetails</a></td>
-          <td><a href="angularpagedetails?id={{c.productId}}">delete</a></td>
-          <td><a href="edit?id={{c.productId}}">update</a></td>
+          <!-- <td><a href="delete?id={{c.productId}}">delete</a></td>
+          <td><a href="edit?id={{c.productId}}">update</a></td> -->
           </tr>
 </tbody>
 </table>

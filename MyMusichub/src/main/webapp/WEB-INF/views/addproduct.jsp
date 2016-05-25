@@ -17,16 +17,16 @@
 <body>
 
 <div class="container">
-  <form:form commandName="pro" class="form-horizontal" id="registration" method="post" action="add"> 
+  <form:form commandName="pro" class="form-horizontal" id="registration" method="post"   enctype="multipart/form-data"  action="add"> 
   
   <fieldset>
 			<legend>ADDING PRODUCT </legend>
-			<div class="control-group">
+			  <div class="control-group">
 				<label class="control-label">Product ID:</label>
 				<div class="controls">
 					<form:input path="productId" />
 				</div>
-			</div>
+			</div>  
 			<div class="control-group">
 				<label class="control-label">Product Name:</label>
 				<div class="controls">
@@ -45,7 +45,20 @@
 					<form:input path="manufacturer" />
 				</div>
 				
+				<div class="control-group">
+				<label class="control-label">type</label>
+				<div class="controls">
+					<form:input path="type" />
+				</div>
 				
+			
+				<div class="control-group">
+				
+					<div class="controls">
+					<label class="control-label">Image upload</label>
+						<input type="file" name="imgFile" />
+					</div>
+			
 			</div>
 			<div class="control-group">
 				<label class="control-label"></label>

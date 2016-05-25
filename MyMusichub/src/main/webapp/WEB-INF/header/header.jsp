@@ -62,6 +62,7 @@
       </li>
       <li><a href="about">ABOUT US</a></li>
       <li><a href="contact">CONTACT US</a></li>
+     
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>

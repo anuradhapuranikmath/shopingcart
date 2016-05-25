@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<jsp:include page="/WEB-INF/header/header.jsp"></jsp:include>
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -17,38 +17,56 @@
 <body>
 
 <div class="container">
-  <form:form id="registerForm" modelAttribute="me" method="post"  
-   action="success"> 
+  <form:form commandName="pro" class="form-horizontal" id="registration" method="post"   enctype="multipart/form-data"  action="add"> 
   
-    <div class="form-group">
-      <label for="usr">productId:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    
-    
-    <div class="form-group">
-      <label for="usr">productName:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    
-    <div class="form-group">
-      <label for="usr">productPrice:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    
-    
-    <div class="form-group">
-      <label for="usr">manufacturer:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    
-    <a href=add>ADD</a>
-    
-    
-  </form:form>  
+  <fieldset>
+			<legend>ADDING PRODUCT </legend>
+			<div class="control-group">
+				<label class="control-label">Product ID:</label>
+				<div class="controls">
+					<form:input path="productId" />
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">Product Name:</label>
+				<div class="controls">
+					<form:input path="productName" />
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">product price</label>
+				<div class="controls">
+					<form:input path="productprice" />
+				</div>
+				
+				<div class="control-group">
+				<label class="control-label">manufacturer</label>
+				<div class="controls">
+					<form:input path="manufacturer" />
+				</div>
+				
+				<div class="form-group">
+				
+					<div class="col-sm-5">
+						<input type="file" name="imgFile" cssClass="form-control"/>
+					</div>
+				
+				
+				
+				
+			</div>
+			<div class="control-group">
+				<label class="control-label"></label>
+				<div class="controls">
+					<button type="submit" class="btn btn-success" >Add</button>
+				</div>
+			</div>
+		</fieldset>
+    </form:form>  
   
   
 </div>
+<jsp:include page="/WEB-INF/footer/footer.jsp"></jsp:include>
 
 </body>
 </html>

@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -59,19 +61,15 @@ public class ProductDetailsDao {
 	    	  
 		}
 		
-		public int deleteRow(int id)
+		public void deleteProduct(int id)
 		{
-			  Session session = sessionFactory.openSession();  
-	    	  Transaction tx = session.beginTransaction(); 
-	    	  ProductDetails me=(ProductDetails)session.load(ProductDetails.class, id);
-	    	  session.delete(me);
-	    	  session.flush();
-	    	 // tx.commit();
-	    	  Serializable ids=session.getIdentifier(me);
-	    	  session.close();
-	    	  return(Integer)ids;
+			Session session = sessionFactory.getCurrentSession();
+	        ProductDetails p = (ProductDetails) session.get(ProductDetails.class, new Integer(id));
+	        if(null != p)
+	        {
+	            session.delete(p);       
+	        }
 		}
-		
 		
 		public void insertRow(ProductDetails me)
 		{

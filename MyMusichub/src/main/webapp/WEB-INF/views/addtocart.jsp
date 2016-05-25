@@ -31,6 +31,8 @@ $(document).ready(function(){
             <th>product name</th>  
             <th>product price</th>  
             <th>product manufacturer</th>
+            <th> BUY</th>
+            <th>ADD TO CART</th>
           </tr>
         </thead>  
         <tbody>   
@@ -40,16 +42,20 @@ $(document).ready(function(){
            <td>${data.productName }</td>
            <td>${data.productprice}</td>
            <td>${data.manufacturer}</td>
-           
+           <td>
+				<a href = "toflow" class = "btn btn-primary" role = "button">Buy </a> 
+            	
+            </td>
+             <td>
+            <a href = "toflow/${data.productId}" alert (" product added to cart)"class = "btn btn-default" role = "button">ADD TO CART</a>
+            </td>
           </tr>  
           
         </tbody>  
       </table> 
       </div>
  
- <a href="addproduct">CLICK TO ADD PRODUCT</a></br>
- <a href="edit">CLICK TO UPDATE PRODUCT</a></br>
- <a href="delete">CLICK TO DELETE</a>  </br>
+ 
    
  <jsp:include page="/WEB-INF/footer/footer.jsp"></jsp:include>
  

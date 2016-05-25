@@ -38,8 +38,8 @@ public class Serviceclass {
 		 }  
 	 
 
-	 public int deleteRow(int id) {  
-	  return s.deleteRow(id);  
+	 public void deleteRow(int id) {  
+	  this.s.deleteProduct(id);
 	 } 
 	 
 	 public void insertrow(ProductDetails me)
